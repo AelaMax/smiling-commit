@@ -1,5 +1,6 @@
 import logo from '../images/implantlogo.png';
 import { pageLinks, socialLinks } from '../data';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
@@ -19,7 +20,32 @@ const Navbar = () => {
           </button>
         </div>
         <ul className='nav-links' id='nav-links'>
-          {pageLinks.map((link) => {
+          <li className='nav-link'>
+            <Link to='/'>αρχική</Link>
+          </li>
+          <li className='nav-link'>
+            <Link to='/Praxis'>το ιατρείο</Link>
+          </li>
+          <li className='nav-link'>
+            <Link to='/Service'>υπηρεσίες</Link>
+          </li>
+          <li className='nav-link'>
+            <Link to='/Implants'>εμφυτεύματα</Link>
+          </li>
+          <li className='nav-link'>
+            <Link to='/Robotics'>ρομποτική</Link>
+          </li>
+          <li className='nav-link'>
+            <Link to='/Esthetics'>αισθητική</Link>
+          </li>
+          <li className='nav-link'>
+            <Link to='/Gallery'>photos</Link>
+          </li>
+          <li className='nav-link'>
+            <Link to='/Map'>χάρτης</Link>
+          </li>
+
+          {/* {pageLinks.map((link) => {
             return (
               <li key={link.id}>
                 <a href={link.href} className='nav-link'>
@@ -27,9 +53,9 @@ const Navbar = () => {
                 </a>
               </li>
             );
-          })}
+          })} */}
         </ul>
-
+        {/* 
         <ul className='nav-icons'>
           {socialLinks.map((link) => {
             const { id, href, icon } = link;
@@ -46,7 +72,7 @@ const Navbar = () => {
               </li>
             );
           })}
-        </ul>
+        </ul> */}
       </div>
     </nav>
   );

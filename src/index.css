@@ -172,6 +172,7 @@ p {
 .section-title {
   text-align: center;
   margin-bottom: 4rem;
+  margin-top: 5%;
 }
 
 .section-title h2 {
@@ -268,7 +269,7 @@ Navbar
   height: 280px;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1199px) {
   /* hide toggle button */
   .navbar {
     padding: 1rem 2rem;
@@ -466,7 +467,7 @@ Hero
 
 .implant-container {
   position: relative;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -477,21 +478,20 @@ Hero
 .implant-container h1 {
   text-align: center;
   font-size: 6rem;
-  background: #fff;
+  background: transparent;
   padding: 20px;
   margin: 15px;
   z-index: 1;
 }
 
 .video-container {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
   object-fit: cover;
   width: 100%;
   height: 100%;
-  z-index: 1;
+  z-index: -1;
 }
 
 /* .content {
